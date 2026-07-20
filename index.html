@@ -4,122 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verma Hub Dulehar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Premium Google Fonts for Aesthetic Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
-            background-color: #0b0b0b;
-            color: #ffffff;
+            background-color: #fcf8f5; /* Soft Luxury Cream Background */
+            color: #2c2c2c;
             padding-bottom: 20px;
         }
 
-        /* Top Bar for Quick Links */
+        /* Front/Top Aesthetic Bar with Brand Logos styling */
         .top-social-bar {
-            background-color: #111111;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 204, 0, 0.15);
+            gap: 25px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f2e6df;
         }
 
         .top-social-bar a {
-            color: #aaaaaa;
             text-decoration: none;
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: 1px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             display: flex;
             align-items: center;
-            gap: 5px;
-            transition: color 0.3s;
+            gap: 6px;
+            transition: opacity 0.3s;
         }
+        
+        .top-social-bar .top-maps { color: #4285F4; }
+        .top-social-bar .top-insta { color: #d62976; }
+        .top-social-bar .top-fb { color: #1877F2; }
 
         .top-social-bar a:active {
-            color: #ffcc00;
+            opacity: 0.6;
         }
 
-        /* Premium Brand Header with Logo */
+        /* Premium Minimalist Brand Header */
         .brand-header {
-            background: linear-gradient(180deg, #111111 0%, #0b0b0b 100%);
-            padding: 35px 15px 25px 15px;
+            background-color: #ffffff;
+            padding: 50px 15px 35px 15px;
             text-align: center;
-        }
-
-        .brand-logo-icon {
-            font-family: 'Cinzel', serif;
-            color: #ffcc00;
-            font-size: 26px;
-            font-weight: 700;
-            letter-spacing: 5px;
-            margin-bottom: 5px;
-            display: block;
-            text-shadow: 0 2px 10px rgba(255, 204, 0, 0.2);
+            border-bottom: 1px solid #f2e6df;
         }
 
         .brand-header h1 {
-            font-family: 'Cinzel', serif;
-            color: #ffcc00;
-            font-size: 36px;
+            font-family: 'Playfair Display', serif;
+            color: #4a1525; /* Deep Rich Wine/Burgundy Color - Super Elegant for Women */
+            font-size: 38px;
             font-weight: 700;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             line-height: 1.2;
         }
 
         .brand-header p {
-            color: #888888;
+            color: #8c766b; /* Soft Rose-Taupe */
             font-size: 11px;
-            margin-top: 8px;
+            margin-top: 10px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            font-weight: 500;
         }
 
         .main-container {
             max-width: 500px;
             margin: 0 auto;
-            padding: 20px 15px;
+            padding: 30px 15px;
         }
 
         .section-heading {
-            font-family: 'Cinzel', serif;
-            font-size: 22px;
-            font-weight: 500;
-            margin-top: 15px;
-            margin-bottom: 25px;
-            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 600;
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: #4a1525;
             text-align: center;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .section-heading::after {
             content: '';
             display: block;
-            width: 40px;
+            width: 50px;
             height: 1px;
-            background-color: #ffcc00;
-            margin: 10px auto 0 auto;
+            background-color: #b89785;
+            margin: 12px auto 0 auto;
         }
 
-        /* Product Card Design */
+        /* Product Card Design - Luxury Boutique Grid */
         .product-list {
             display: flex;
             flex-direction: column;
-            gap: 35px;
+            gap: 40px;
         }
 
         .suit-card {
-            background-color: #111111;
-            border-radius: 0px;
+            background-color: #ffffff;
+            border-radius: 12px; /* Smooth Elegant Edges */
             overflow: hidden;
-            border: 1px solid #1f1f1f;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            border: 1px solid #f2e6df;
+            box-shadow: 0 10px 25px rgba(139, 115, 102, 0.08); /* Soft shadow */
         }
 
         .suit-card img {
@@ -131,80 +127,85 @@
         .suit-details {
             padding: 25px 20px;
             text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, #fffbf9 100%);
         }
 
         .suit-details h3 {
-            font-size: 17px;
-            color: #ffffff;
-            font-weight: 400;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            font-size: 19px;
+            color: #2c2c2c;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
 
         .suit-price {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
-            color: #ffcc00;
+            color: #8c1c3c; /* Beautiful Berry/Pink tones */
             margin-bottom: 15px;
+            letter-spacing: 0.5px;
         }
 
         .suit-meta {
             font-size: 13px;
-            color: #888888;
+            color: #706e6b;
             margin-bottom: 6px;
+            font-weight: 400;
         }
 
         .suit-cod {
             font-size: 12px;
-            color: #ff4d4d;
+            color: #c94a4a;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* WhatsApp Order Button */
+        /* Aesthetic Pastel-Rose Order Button */
         .whatsapp-btn {
             display: inline-block;
             width: 100%;
-            background: transparent;
-            color: #ffcc00;
+            background-color: #4a1525; /* Deep Wine Luxury Button */
+            color: #ffffff;
             text-align: center;
-            padding: 14px;
+            padding: 15px;
             text-decoration: none;
-            border: 1px solid #ffcc00;
+            border-radius: 8px;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: 2px;
             text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(74, 21, 37, 0.2);
             transition: all 0.3s ease;
         }
 
         .whatsapp-btn:active {
-            background-color: #ffcc00;
-            color: #000000;
+            background-color: #6b2339;
+            transform: translateY(1px);
         }
 
-        /* FAQ Section Style */
+        /* Beautiful Trust-building FAQ Section */
         .faq-container {
             margin-top: 50px;
             padding: 0 5px;
         }
 
         .faq-item {
-            background-color: #111111;
-            border: 1px solid #1f1f1f;
-            margin-bottom: 12px;
-            padding: 15px;
-            border-radius: 4px;
+            background-color: #ffffff;
+            border: 1px solid #f2e6df;
+            margin-bottom: 14px;
+            padding: 18px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(139, 115, 102, 0.03);
         }
 
         .faq-question {
-            font-size: 14px;
+            font-family: 'Playfair Display', serif;
+            font-size: 15px;
             font-weight: 600;
-            color: #ffcc00;
-            margin-bottom: 6px;
+            color: #4a1525;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -212,32 +213,32 @@
 
         .faq-answer {
             font-size: 13px;
-            color: #cccccc;
-            line-height: 1.5;
-            padding-left: 22px;
+            color: #615e5c;
+            line-height: 1.6;
+            padding-left: 24px;
         }
 
-        /* Footer & Buttons */
+        /* Footer & Luxury Rounded Action Buttons */
         .store-footer {
-            background-color: #0a0a0a;
-            padding: 40px 20px 20px 20px;
-            margin-top: 50px;
-            border-top: 1px solid #1f1f1f;
+            background-color: #ffffff;
+            padding: 45px 20px 30px 20px;
+            margin-top: 60px;
+            border-top: 1px solid #f2e6df;
             text-align: center;
         }
 
         .store-footer h4 {
-            font-family: 'Cinzel', serif;
-            color: #ffcc00;
-            font-size: 18px;
+            font-family: 'Playfair Display', serif;
+            color: #4a1525;
+            font-size: 20px;
             margin-bottom: 25px;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .contact-buttons-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
             max-width: 340px;
             margin: 0 auto;
         }
@@ -246,49 +247,50 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background-color: #141414;
-            color: #ffffff;
+            gap: 12px;
+            background-color: #fffbf9;
+            color: #333333;
             text-decoration: none;
-            padding: 14px 18px;
-            border-radius: 6px;
+            padding: 15px 20px;
+            border-radius: 30px; /* Rounded Pillow Shape - Very Aesthetic */
             font-size: 13px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            border: 1px solid #262626;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            border: 1px solid #eade95;
             transition: all 0.2s ease;
         }
 
+        /* Branding Colors on Footer Buttons */
+        .action-link-btn.btn-call { border-color: #25D366; color: #1ebd57; background-color: #f7ftf8; }
         .action-link-btn.btn-maps { border-color: #4285F4; color: #4285F4; }
         .action-link-btn.btn-insta { border-color: #E1306C; color: #E1306C; }
         .action-link-btn.btn-fb { border-color: #1877F2; color: #1877F2; }
-        .action-link-btn.btn-call { border-color: #25D366; color: #25D366; }
 
         .action-link-btn:active {
-            background-color: #1f1f1f;
+            background-color: #fcf8f5;
             transform: scale(0.98);
         }
 
         .copyright {
-            margin-top: 40px;
+            margin-top: 45px;
             font-size: 11px;
-            color: #444444;
+            color: #9c9591;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
 
-    <!-- FRONT/TOP BAR: Quick Connect Links -->
+    <!-- FRONT/TOP BAR: Quick Aesthetic Brand Links -->
     <div class="top-social-bar">
-        <a href="https://maps.app.goo.gl/zkW41sSMiFQinodF6?g_st=ic" target="_blank">📍 Maps</a>
-        <a href="https://instagram.com/VermaHubDulehar" target="_blank">📸 Instagram</a>
-        <a href="https://www.facebook.com/share/1EmFeN72cj/?mibextid=wwXIfr" target="_blank">🔵 Facebook</a>
+        <a href="https://maps.app.goo.gl/zkW41sSMiFQinodF6?g_st=ic" target="_blank" class="top-maps">📍 Directions</a>
+        <a href="https://instagram.com/VermaHubDulehar" target="_blank" class="top-insta">📸 Instagram</a>
+        <a href="https://www.facebook.com/share/1EmFeN72cj/?mibextid=wwXIfr" target="_blank" class="top-fb">🔵 Facebook</a>
     </div>
 
-    <!-- Header Section with Logo -->
+    <!-- Header Section (Only Verma Hub - Pure Elegance) -->
     <div class="brand-header">
-        <span class="brand-logo-icon">✨ VH ✨</span>
         <h1>VERMA HUB</h1>
         <p>Luxury Ladies Apparel & Suit House</p>
     </div>
@@ -338,23 +340,23 @@
 
         </div>
 
-        <!-- NEW: Professional FAQ Section -->
+        <!-- Professional FAQ Section -->
         <div class="faq-container">
             <h2 class="section-heading">Frequently Asked Questions</h2>
             
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">❓ Order Kaise Karein?</div>
+                    <div class="faq-question">✨ Order Kaise Karein?</div>
                     <div class="faq-answer">Suit ke niche diye gaye "Inquire on WhatsApp" button par click karein. Woh seedhe aapko hamare WhatsApp par le jayega jahan aap apna order confirm kar sakte hain.</div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question">🚚 Delivery me kitna time lagta hai?</div>
+                    <div class="faq-question">📦 Delivery me kitna time lagta hai?</div>
                     <div class="faq-answer">All India shipping available hai. Order dispatch hone ke baad aamtaur par 4 se 7 dino me delivery ho jaati hai.</div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question">💵 Kya Cash on Delivery (COD) available hai?</div>
+                    <div class="faq-question">💝 Kya Cash on Delivery (COD) available hai?</div>
                     <div class="faq-answer">Nahi, hamare paas Cash on Delivery available nahi hai. Aapko Online Payment (UPI/GPay/PhonePe) hi karna hoga.</div>
                 </div>
             </div>
@@ -362,23 +364,27 @@
 
     </div>
 
-    <!-- LAST/FOOTER SECTION: Full Connection Buttons -->
+    <!-- LAST/FOOTER SECTION: Full Aesthetic Pill Buttons -->
     <div class="store-footer">
         <h4>Contact & Connect</h4>
         
         <div class="contact-buttons-container">
+            <!-- Call Button -->
             <a href="tel:6230337466" class="action-link-btn btn-call">
                 📞 Call / WhatsApp: 6230337466
             </a>
             
+            <!-- Google Maps Directions Button -->
             <a href="https://maps.app.goo.gl/zkW41sSMiFQinodF6?g_st=ic" target="_blank" class="action-link-btn btn-maps">
-                📍 Open Store Location on Google Maps
+                📍 Get Directions on Google Maps
             </a>
             
+            <!-- Instagram Button -->
             <a href="https://instagram.com/VermaHubDulehar" target="_blank" class="action-link-btn btn-insta">
                 📸 Follow us on Instagram
             </a>
             
+            <!-- Facebook Button -->
             <a href="https://www.facebook.com/share/1EmFeN72cj/?mibextid=wwXIfr" target="_blank" class="action-link-btn btn-fb">
                 🔵 Visit our Facebook Page
             </a>
