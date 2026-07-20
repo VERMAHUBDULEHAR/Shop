@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verma Hub Dulehar</title>
-    <!-- Premium Google Fonts for Aesthetic Look -->
+    <!-- Google Fonts for High-End Boutique Look -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Library for Original Social Logos/Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -15,60 +17,54 @@
         }
 
         body {
-            background-color: #fcf8f5; /* Soft Luxury Cream Background */
+            background-color: #fdfaf7; /* Super Aesthetic Soft Cream */
             color: #2c2c2c;
             padding-bottom: 20px;
         }
 
-        /* Front/Top Aesthetic Bar with Brand Logos styling */
+        /* FRONT/TOP BAR: Original Mini Logos */
         .top-social-bar {
             background-color: #ffffff;
             display: flex;
             justify-content: center;
-            gap: 25px;
-            padding: 12px 0;
+            gap: 30px;
+            padding: 14px 0;
             border-bottom: 1px solid #f2e6df;
         }
 
         .top-social-bar a {
             text-decoration: none;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: opacity 0.3s;
+            font-size: 18px; /* Perfect icon size for top bar */
+            transition: transform 0.2s;
         }
         
-        .top-social-bar .top-maps { color: #4285F4; }
-        .top-social-bar .top-insta { color: #d62976; }
-        .top-social-bar .top-fb { color: #1877F2; }
+        .top-social-bar .top-maps { color: #4285F4; }      /* Google Maps Blue */
+        .top-social-bar .top-insta { color: #E1306C; }     /* Instagram Pink */
+        .top-social-bar .top-fb { color: #1877F2; }        /* Facebook Blue */
 
         .top-social-bar a:active {
-            opacity: 0.6;
+            transform: scale(0.85);
         }
 
-        /* Premium Minimalist Brand Header */
+        /* Elegant Minimalist Brand Header */
         .brand-header {
             background-color: #ffffff;
-            padding: 50px 15px 35px 15px;
+            padding: 45px 15px 35px 15px;
             text-align: center;
             border-bottom: 1px solid #f2e6df;
         }
 
         .brand-header h1 {
             font-family: 'Playfair Display', serif;
-            color: #4a1525; /* Deep Rich Wine/Burgundy Color - Super Elegant for Women */
-            font-size: 38px;
+            color: #4a1525; /* Royal Wine Burgundy */
+            font-size: 36px;
             font-weight: 700;
-            letter-spacing: 4px;
+            letter-spacing: 5px;
             line-height: 1.2;
         }
 
         .brand-header p {
-            color: #8c766b; /* Soft Rose-Taupe */
+            color: #8c766b;
             font-size: 11px;
             margin-top: 10px;
             text-transform: uppercase;
@@ -79,43 +75,42 @@
         .main-container {
             max-width: 500px;
             margin: 0 auto;
-            padding: 30px 15px;
+            padding: 25px 15px;
         }
 
         .section-heading {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-size: 23px;
             font-weight: 600;
             font-style: italic;
             margin-top: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #4a1525;
             text-align: center;
-            letter-spacing: 1px;
         }
 
         .section-heading::after {
             content: '';
             display: block;
-            width: 50px;
+            width: 45px;
             height: 1px;
             background-color: #b89785;
-            margin: 12px auto 0 auto;
+            margin: 10px auto 0 auto;
         }
 
-        /* Product Card Design - Luxury Boutique Grid */
+        /* Product Card Design - Luxury Soft Theme */
         .product-list {
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 35px;
         }
 
         .suit-card {
             background-color: #ffffff;
-            border-radius: 12px; /* Smooth Elegant Edges */
+            border-radius: 16px; /* Ultra-smooth modern curved edges */
             overflow: hidden;
             border: 1px solid #f2e6df;
-            box-shadow: 0 10px 25px rgba(139, 115, 102, 0.08); /* Soft shadow */
+            box-shadow: 0 12px 30px rgba(139, 115, 102, 0.06);
         }
 
         .suit-card img {
@@ -127,7 +122,7 @@
         .suit-details {
             padding: 25px 20px;
             text-align: center;
-            background: linear-gradient(180deg, #ffffff 0%, #fffbf9 100%);
+            background: linear-gradient(180deg, #ffffff 0%, #fffcfb 100%);
         }
 
         .suit-details h3 {
@@ -135,49 +130,55 @@
             font-size: 19px;
             color: #2c2c2c;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .suit-price {
             font-size: 22px;
             font-weight: 600;
-            color: #8c1c3c; /* Beautiful Berry/Pink tones */
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
+            color: #8c1c3c;
+            margin-bottom: 12px;
         }
 
         .suit-meta {
             font-size: 13px;
             color: #706e6b;
             margin-bottom: 6px;
-            font-weight: 400;
         }
 
         .suit-cod {
-            font-size: 12px;
+            font-size: 11px;
             color: #c94a4a;
             font-weight: 600;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* Aesthetic Pastel-Rose Order Button */
+        /* Elegant WhatsApp Button with Logo Icon */
         .whatsapp-btn {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             width: 100%;
-            background-color: #4a1525; /* Deep Wine Luxury Button */
+            background-color: #4a1525;
             color: #ffffff;
             text-align: center;
             padding: 15px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
             font-size: 13px;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            box-shadow: 0 5px 15px rgba(74, 21, 37, 0.2);
-            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(74, 21, 37, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .whatsapp-btn i {
+            font-size: 16px;
+            color: #25D366; /* Bright Green WhatsApp Icon Inside */
         }
 
         .whatsapp-btn:active {
@@ -196,8 +197,8 @@
             border: 1px solid #f2e6df;
             margin-bottom: 14px;
             padding: 18px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(139, 115, 102, 0.03);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(139, 115, 102, 0.02);
         }
 
         .faq-question {
@@ -205,10 +206,15 @@
             font-size: 15px;
             font-weight: 600;
             color: #4a1525;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+        }
+
+        .faq-question i {
+            color: #b89785;
+            font-size: 14px;
         }
 
         .faq-answer {
@@ -218,11 +224,11 @@
             padding-left: 24px;
         }
 
-        /* Footer & Luxury Rounded Action Buttons */
+        /* Footer & Luxury Rounded Action Buttons with Logos */
         .store-footer {
             background-color: #ffffff;
             padding: 45px 20px 30px 20px;
-            margin-top: 60px;
+            margin-top: 50px;
             border-top: 1px solid #f2e6df;
             text-align: center;
         }
@@ -246,25 +252,32 @@
         .action-link-btn {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
+            justify-content: flex-start; /* Aligns items elegantly */
+            padding-left: 25px;
+            gap: 15px;
             background-color: #fffbf9;
             color: #333333;
             text-decoration: none;
-            padding: 15px 20px;
-            border-radius: 30px; /* Rounded Pillow Shape - Very Aesthetic */
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-radius: 30px; /* Pillow Shape Buttons */
             font-size: 13px;
             font-weight: 600;
-            letter-spacing: 0.8px;
-            border: 1px solid #eade95;
+            letter-spacing: 0.5px;
+            border: 1px solid #e2e2e2;
             transition: all 0.2s ease;
         }
 
-        /* Branding Colors on Footer Buttons */
-        .action-link-btn.btn-call { border-color: #25D366; color: #1ebd57; background-color: #f7ftf8; }
-        .action-link-btn.btn-maps { border-color: #4285F4; color: #4285F4; }
-        .action-link-btn.btn-insta { border-color: #E1306C; color: #E1306C; }
-        .action-link-btn.btn-fb { border-color: #1877F2; color: #1877F2; }
+        /* Logo Colors and Styles inside Footer Buttons */
+        .action-link-btn i {
+            font-size: 18px;
+            width: 20px;
+            text-align: center;
+        }
+        .action-link-btn.btn-call i { color: #25D366; }
+        .action-link-btn.btn-maps i { color: #4285F4; }
+        .action-link-btn.btn-insta i { color: #E1306C; }
+        .action-link-btn.btn-fb i { color: #1877F2; }
 
         .action-link-btn:active {
             background-color: #fcf8f5;
@@ -282,14 +295,14 @@
 </head>
 <body>
 
-    <!-- FRONT/TOP BAR: Quick Aesthetic Brand Links -->
+    <!-- FRONT/TOP BAR: Original Brand Logo Icons -->
     <div class="top-social-bar">
-        <a href="https://maps.app.goo.gl/zkW41sSMiFQinodF6?g_st=ic" target="_blank" class="top-maps">📍 Directions</a>
-        <a href="https://instagram.com/VermaHubDulehar" target="_blank" class="top-insta">📸 Instagram</a>
-        <a href="https://www.facebook.com/share/1EmFeN72cj/?mibextid=wwXIfr" target="_blank" class="top-fb">🔵 Facebook</a>
+        <a href="https://maps.app.goo.gl/zkW41sSMiFQinodF6?g_st=ic" target="_blank" class="top-maps" title="Google Maps Location"><i class="fa-solid fa-map-location-dot"></i></a>
+        <a href="https://instagram.com/VermaHubDulehar" target="_blank" class="top-insta" title="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1EmFeN72cj/?mibextid=wwXIfr" target="_blank" class="top-fb" title="Facebook Page"><i class="fa-brands fa-facebook"></i></a>
     </div>
 
-    <!-- Header Section (Only Verma Hub - Pure Elegance) -->
+    <!-- Header Section (Pure Minimalist Luxury) -->
     <div class="brand-header">
         <h1>VERMA HUB</h1>
         <p>Luxury Ladies Apparel & Suit House</p>
@@ -310,7 +323,9 @@
                     <div class="suit-price">₹500</div>
                     <div class="suit-meta">🚚 Shipping: ₹50 (All India)</div>
                     <div class="suit-cod">❌ No Cash On Delivery</div>
-                    <a href="https://wa.me/916230337466?text=Hi,%20I%20want%20to%20buy%20the%20Premium%20Jaipuri%20Yellow%20Suit" class="whatsapp-btn">Inquire on WhatsApp</a>
+                    <a href="https://wa.me/916230337466?text=Hi,%20I%20want%20to%20buy%20the%20Premium%20Jaipuri%20Yellow%20Suit" class="whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
 
@@ -322,7 +337,9 @@
                     <div class="suit-price">₹500</div>
                     <div class="suit-meta">🚚 Shipping: ₹50 (All India)</div>
                     <div class="suit-cod">❌ No Cash On Delivery</div>
-                    <a href="https://wa.me/916230337466?text=Hi,%20I%20want%20to%20buy%20the%20Premium%20Jaipuri%20Pink%20Suit" class="whatsapp-btn">Inquire on WhatsApp</a>
+                    <a href="https://wa.me/916230337466?text=Hi,%20I%20want%20to%20buy%20the%20Premium%20Jaipuri%20Pink%20Suit" class="whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
 
@@ -334,59 +351,61 @@
                     <div class="suit-price">₹500</div>
                     <div class="suit-meta">🚚 Shipping: ₹50 (All India)</div>
                     <div class="suit-cod">❌ No Cash On Delivery</div>
-                    <a href="https://wa.me/916230337466?text=Hi,%20I%20want%20to%20buy%20the%20Premium%20Jaipuri%20Teal%20Suit" class="whatsapp-btn">Inquire on WhatsApp</a>
+                    <a href="https://wa.me/916230337466?text=Hi,%20I%20want%20to%20buy%20the%20Premium%20Jaipuri%20Teal%20Suit" class="whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+                    </a>
                 </div>
             </div>
 
         </div>
 
-        <!-- Professional FAQ Section -->
+        <!-- FAQ Section -->
         <div class="faq-container">
             <h2 class="section-heading">Frequently Asked Questions</h2>
             
             <div class="faq-list">
                 <div class="faq-item">
-                    <div class="faq-question">✨ Order Kaise Karein?</div>
-                    <div class="faq-answer">Suit ke niche diye gaye "Inquire on WhatsApp" button par click karein. Woh seedhe aapko hamare WhatsApp par le jayega jahan aap apna order confirm kar sakte hain.</div>
+                    <div class="faq-question"><i class="fa-regular fa-star"></i> Order Kaise Karein?</div>
+                    <div class="faq-answer">Suit ke niche diye gaye WhatsApp button par click karein. Woh seedhe aapko hamare WhatsApp par le jayega jahan aap apna order confirm kar sakte hain.</div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question">📦 Delivery me kitna time lagta hai?</div>
+                    <div class="faq-question"><i class="fa-solid fa-truck-fast"></i> Delivery me kitna time lagta hai?</div>
                     <div class="faq-answer">All India shipping available hai. Order dispatch hone ke baad aamtaur par 4 se 7 dino me delivery ho jaati hai.</div>
                 </div>
 
                 <div class="faq-item">
-                    <div class="faq-question">💝 Kya Cash on Delivery (COD) available hai?</div>
-                    <div class="faq-answer">Nahi, hamare paas Cash on Delivery available nahi hai. Aapko Online Payment (UPI/GPay/PhonePe) hi karna hoga.</div>
+                    <div class="faq-question"><i class="fa-solid fa-wallet"></i> Kya Cash on Delivery available hai?</div>
+                    <div class="faq-answer">Nahi, hamare paas Cash on Delivery (COD) available nahi hai. Aapko Online Payment (UPI/GPay/PhonePe) hi karna hoga.</div>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <!-- LAST/FOOTER SECTION: Full Aesthetic Pill Buttons -->
+    <!-- LAST/FOOTER SECTION: Full Buttons with Original Icons -->
     <div class="store-footer">
         <h4>Contact & Connect</h4>
         
         <div class="contact-buttons-container">
             <!-- Call Button -->
             <a href="tel:6230337466" class="action-link-btn btn-call">
-                📞 Call / WhatsApp: 6230337466
+                <i class="fa-solid fa-phone"></i> Call / WhatsApp: 6230337466
             </a>
             
-            <!-- Google Maps Directions Button -->
+            <!-- Google Maps Button -->
             <a href="https://maps.app.goo.gl/zkW41sSMiFQinodF6?g_st=ic" target="_blank" class="action-link-btn btn-maps">
-                📍 Get Directions on Google Maps
+                <i class="fa-solid fa-location-dot"></i> Get Directions on Google Maps
             </a>
             
             <!-- Instagram Button -->
             <a href="https://instagram.com/VermaHubDulehar" target="_blank" class="action-link-btn btn-insta">
-                📸 Follow us on Instagram
+                <i class="fa-brands fa-instagram"></i> Follow us on Instagram
             </a>
             
             <!-- Facebook Button -->
             <a href="https://www.facebook.com/share/1EmFeN72cj/?mibextid=wwXIfr" target="_blank" class="action-link-btn btn-fb">
-                🔵 Visit our Facebook Page
+                <i class="fa-brands fa-facebook-f"></i> Visit our Facebook Page
             </a>
         </div>
 
